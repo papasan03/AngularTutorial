@@ -1,0 +1,7 @@
+{
+  "name": "angularIonic-tour-of-heroes",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

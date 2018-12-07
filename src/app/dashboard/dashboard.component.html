@@ -1,0 +1,23 @@
+<h3>Top Heroes</h3>
+<!--<div class="grid grid-pad">-->
+  <!--<a *ngFor="let hero of heroes" class="col-1-4">-->
+    <!--<div class="module hero">-->
+      <!--<h4>{{hero.name}}</h4>-->
+    <!--</div>-->
+  <!--</a>-->
+<!--</div>-->
+<div>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let hero of heroes" size="3">
+        <ion-button routerLink="/detail/{{hero.id}}" color="medium" expand="block" strong="true">
+          <div class="module hero">
+            <h4>{{hero.name}}</h4>
+          </div>
+        </ion-button>
+        <!--<a routerLink="/detail/{{hero.id}}">-->
+        <!--</a>-->
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
